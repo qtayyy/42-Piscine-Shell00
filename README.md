@@ -19,5 +19,5 @@
 id_rsa_pub is the public key file generated when you create an SSH key pair using tools like ssh-keygen
 1. `ssh-keygen`
 2. Press <Enter> three times
-3. cd ~/.ssh
-4. cat id_rsa_pub
+3. `cd ~/.ssh`
+4. `cat id_rsa_pub`
