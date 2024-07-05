@@ -30,16 +30,15 @@ Or `ls -mpt` in reverse order.
 
 ## ex05
 1. Add the following two lines into your script:
-   `#!/bin/bash`
-
+   `#!/bin/bash`<br>
    `git log --format='%H' -n5`
 2. Then in your terminal, `chmod +x git_commit.sh` to grant executable permission.
 
 Note: you can also use `git log -5 --format='%H' | cat -e`
 
 ## ex06
-Other options:
-`git ls-files -o -i --exclude-standard`
+Other options:<br>
+`git ls-files -o -i --exclude-standard`<br>
 `git clean -Xnd | cut -b 14-256`
 
 ## ex07
@@ -55,10 +54,11 @@ Steps:
 4. Remember to remove the 'a' and 'sw.diff' files before submitting: `rm a sw.diff`.
 
 ## ex08
-Double check my adding `echo` first before deleting them: `find . -type f -regex '.*\(\~\|#.*#\)$' -exec echo rm {} +`
+Double check my adding `echo` first before deleting them:<br>
+`find . -type f -regex '.*\(\~\|#.*#\)$' -exec echo rm {} +`
 
-Other options (`-delete` flag works too for file deletion):
-`find . -type f \( -name '*~' -o -name '#*#' \) -exec rm {} +`
+Other options (`-delete` flag works too for file deletion):<br>
+`find . -type f \( -name '*~' -o -name '#*#' \) -exec rm {} +`<br>
 `find . -type f \( -iname '*~' -o -iname '#*#' \) -exec rm {} +`
 
 ## ex09
