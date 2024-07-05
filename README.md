@@ -31,6 +31,7 @@ Or `ls -mpt` in reverse order.
 ## ex05
 1. Add the following two lines into your script:
    `#!/bin/bash`
+
    `git log --format='%H' -n5`
 2. Then in your terminal, `chmod +x git_commit.sh` to grant executable permission.
 
@@ -39,10 +40,11 @@ Note: you can also use `git log -5 --format='%H' | cat -e`
 ## ex06
 Other options:
 `git ls-files -o -i --exclude-standard`
+
 `git clean -Xnd | cut -b 14-256`
 
 ## ex07
-1. Unpack the `resources.tar.gz` file using `tar -xvzf` if on Linux (just open in on Mac).
+1. Unpack the `resources.tar.gz` file using `tar -xvzf` if on Linux (just open it on Mac).
 2. You'll find two files inside it: 'a' and 'sw.diff'.
 3. The 'sw.diff' file was previously created by running the command `diff a b > sw.diff`.
 4. Your job here is to re-create the 'b' file using the `patch` command.
@@ -57,7 +59,9 @@ Steps:
 Double check my adding `echo` first before deleting them: `find . -type f -regex '.*\(\~\|#.*#\)$' -exec echo rm {} +`
 
 Other options (`-delete` flag works too for file deletion):
+
 `find . -type f \( -name '*~' -o -name '#*#' \) -exec rm {} +`
+
 `find . -type f \( -iname '*~' -o -iname '#*#' \) -exec rm {} +`
 
 ## ex09
