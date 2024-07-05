@@ -73,5 +73,8 @@ Your file should contain:
 41 string 42 42 file found
 !:mime file/mime-type
 
+You can create a file called file1 with a 42 string at the 42nd byte to test it:<br>
+`file -C -m ft_magic file1`
+
 # Resources
 https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/Shell00
