@@ -29,7 +29,7 @@ id_rsa_pub is the public key file generated when you create an SSH key pair usin
 Or `ls -mpt` in reverse order.
 
 ## ex05
-1. Add the following two lines into your script:
+1. Add the following two lines into your script:<br>
    `#!/bin/bash`<br>
    `git log --format='%H' -n5`
 2. Then in your terminal, `chmod +x git_commit.sh` to grant executable permission.
