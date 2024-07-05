@@ -15,8 +15,11 @@ The `cat` command concatenates multiple files and prints their contents on the s
 3. `ln -s test0 test6`
 4. `ln test3 test5`
 5. `truncate -s 4 test1; truncate -s 1 test3; truncate -s 2 test4; truncate -s 1 test5; truncate -s 5 test6`
-6. `touch -t 202406012047 test0; touch -t 202406012146 test1; touch -t 202406012245 test2; touch -t 202406012344 test3; touch -t 202406012343 test4; touch -t 202406012344 test5; touch -h -d "2024-06-01 22:20:00" test6`
-7. `chmod 714 test1; chmod 504 test2; chmod 404 test3; chmod 641 test4; chmod 404 test5; chmod 777 test6; chmod 715 test0`
+6. `touch -t 202406012047 test0; touch -t 202406012146 test1; touch -t 202406012245 test2;`<br>
+   `touch -t 202406012344 test3; touch -t 202406012343 test4; touch -t 202406012344 test5;`<br>
+   `touch -h -d "2024-06-01 22:20:00" test6`<br>
+7. `chmod 714 test1; chmod 504 test2; chmod 404 test3; chmod 641 test4; chmod 404 test5; chmod 777 test6;`<br>
+   `chmod 715 test0`
 
 ## ex03
 id_rsa_pub is the public key file generated when you create an SSH key pair using tools like ssh-keygen.
