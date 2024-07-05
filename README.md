@@ -40,7 +40,6 @@ Note: you can also use `git log -5 --format='%H' | cat -e`
 ## ex06
 Other options:
 `git ls-files -o -i --exclude-standard`
-
 `git clean -Xnd | cut -b 14-256`
 
 ## ex07
@@ -59,9 +58,7 @@ Steps:
 Double check my adding `echo` first before deleting them: `find . -type f -regex '.*\(\~\|#.*#\)$' -exec echo rm {} +`
 
 Other options (`-delete` flag works too for file deletion):
-
 `find . -type f \( -name '*~' -o -name '#*#' \) -exec rm {} +`
-
 `find . -type f \( -iname '*~' -o -iname '#*#' \) -exec rm {} +`
 
 ## ex09
