@@ -20,6 +20,7 @@ The `cat` command concatenates multiple files and prints their contents on the s
    `touch -h -d "2024-06-01 22:20:00" test6`<br>
 7. `chmod 714 test1; chmod 504 test2; chmod 404 test3; chmod 641 test4; chmod 404 test5; chmod 777 test6;`<br>
    `chmod 715 test0`
+8. `tar -cf exo2.tar *`
 
 ## ex03
 id_rsa_pub is the public key file generated when you create an SSH key pair using tools like ssh-keygen.
@@ -60,7 +61,7 @@ Steps:
 Double check my adding `echo` first before deleting them:<br>
 `find . -type f -regex '.*\(\~\|#.*#\)$' -exec echo rm {} +`
 
-Other options (`-delete` flag works too for file deletion):<br>
+Other options (or replace `-exec rm {} +` with `-print -delete`):<br>
 `find . -type f \( -name '*~' -o -name '#*#' \) -exec rm {} +`<br>
 `find . -type f \( -iname '*~' -o -iname '#*#' \) -exec rm {} +`
 
