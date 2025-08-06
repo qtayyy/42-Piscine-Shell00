@@ -38,7 +38,7 @@ Or `ls -mpt` in reverse order.
    `git log --format='%H' -n5`
 2. Then in your terminal, `chmod +x git_commit.sh` to grant executable permission.
 
-Note: you can also use `git log -5 --format='%H' | cat -e`
+Note: you can also use `git log -5 --format='%H'`
 
 ## ex06
 Other options:<br>
